@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -33,11 +34,15 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
+          <DarkModeToggle />
         </div>
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <DarkModeToggle />
+          <button className="text-foreground" onClick={() => setOpen(!open)}>
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
       {/* Mobile menu */}
       {open && (

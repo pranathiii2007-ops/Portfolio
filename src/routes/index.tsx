@@ -8,6 +8,7 @@ import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingDecorations } from "@/components/FloatingDecorations";
+import { BackgroundDecorations } from "@/components/BackgroundDecorations";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="relative min-h-screen">
+      <BackgroundDecorations />
       <FloatingDecorations />
       <Navbar />
       <HeroSection />
