@@ -1,5 +1,5 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { useState } from "react";
 
 export function ContactSection() {
@@ -13,7 +13,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="relative py-24 px-4">
-      <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-blush/15 blur-3xl" />
+      <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-sage/15 blur-3xl" />
       <div className="mx-auto max-w-4xl">
         <ScrollReveal>
           <p className="text-center text-sm font-medium text-primary tracking-widest uppercase">Get In Touch</p>
@@ -29,7 +29,7 @@ export function ContactSection() {
               <div className="rounded-xl bg-peach/30 p-3"><Mail className="h-5 w-5 text-foreground" /></div>
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
-                <p className="text-sm text-muted-foreground">pranathi@example.com</p>
+                <a href="mailto:pranathi@example.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">pranathi@example.com</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -37,6 +37,20 @@ export function ContactSection() {
               <div>
                 <h4 className="font-semibold text-foreground">Location</h4>
                 <p className="text-sm text-muted-foreground">Visakhapatnam, India</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="rounded-xl bg-lavender/30 p-3"><Linkedin className="h-5 w-5 text-foreground" /></div>
+              <div>
+                <h4 className="font-semibold text-foreground">LinkedIn</h4>
+                <a href="https://linkedin.com/in/pranathi" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">linkedin.com/in/pranathi</a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="rounded-xl bg-warm/30 p-3"><Github className="h-5 w-5 text-foreground" /></div>
+              <div>
+                <h4 className="font-semibold text-foreground">GitHub</h4>
+                <a href="https://github.com/pranathiii2007-ops" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">github.com/pranathiii2007-ops</a>
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
