@@ -43,7 +43,7 @@ export function ContactSection() {
               <div className="rounded-xl bg-lavender/30 p-3"><Linkedin className="h-5 w-5 text-foreground" /></div>
               <div>
                 <h4 className="font-semibold text-foreground">LinkedIn</h4>
-                <a href="https://linkedin.com/in/pranathi" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">linkedin.com/in/pranathi</a>
+                <a href="https://www.linkedin.com/in/pranathi-balabhadra-395346348" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">linkedin.com/in/pranathi-balabhadra</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
