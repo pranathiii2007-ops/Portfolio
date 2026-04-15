@@ -9,7 +9,7 @@ export function Footer() {
         </p>
         <div className="flex gap-4">
           <a href="mailto:pranathi@example.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail className="h-4 w-4" /></a>
-          <a href="https://linkedin.com/in/pranathi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-4 w-4" /></a>
+          <a href="https://www.linkedin.com/in/pranathi-balabhadra-395346348" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-4 w-4" /></a>
           <a href="https://github.com/pranathiii2007-ops" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github className="h-4 w-4" /></a>
         </div>
       </div>
