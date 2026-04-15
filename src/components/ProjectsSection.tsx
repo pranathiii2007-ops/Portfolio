@@ -7,16 +7,16 @@ const projects = [
     subtitle: "AI Career Guidance Platform",
     description: "An AI-powered platform providing personalized career guidance and recommendations.",
     tags: ["React", "AI", "TypeScript"],
-    color: "bg-sage/40",
+    color: "bg-sage/30",
     live: "https://ai-pathfinder-alpha.vercel.app/",
     github: "https://github.com/pranathiii2007-ops",
   },
   {
     title: "Portfolio",
     subtitle: "Personal Website",
-    description: "A warm, pastel-themed portfolio showcasing my work, skills and passion for design.",
+    description: "A warm, honey-toned portfolio showcasing my work, skills and passion for design.",
     tags: ["React", "TailwindCSS", "TypeScript"],
-    color: "bg-peach/40",
+    color: "bg-warm/25",
     live: "#",
     github: "#",
   },
@@ -25,7 +25,7 @@ const projects = [
     subtitle: "Stay Tuned! ✨",
     description: "Exciting projects in AI, web development and creative design are on the way.",
     tags: ["AI", "Web Dev", "Design"],
-    color: "bg-blush/40",
+    color: "bg-peach/25",
     live: "#",
     github: "#",
   },
@@ -34,7 +34,7 @@ const projects = [
 export function ProjectsSection() {
   return (
     <section id="projects" className="relative py-24 px-4">
-      <div className="absolute top-20 left-10 h-48 w-48 rounded-full bg-lavender/15 blur-3xl" />
+      <div className="absolute top-20 left-10 h-48 w-48 rounded-full bg-warm/10 blur-3xl" />
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <p className="text-center text-sm font-medium text-primary tracking-widest uppercase">What I've Built</p>
