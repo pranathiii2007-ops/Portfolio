@@ -116,10 +116,13 @@ export function ContactSection() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:scale-105"
+                disabled={status === "sending"}
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:scale-105 disabled:opacity-60"
               >
-                Send Message <Send className="h-4 w-4" />
+                {status === "sending" ? "Sending..." : status === "sent" ? "Sent! ✨" : "Send Message"} <Send className="h-4 w-4" />
               </button>
+              {status === "sent" && <p className="text-sm text-primary">Thank you! I'll get back to you soon 💌</p>}
+              {status === "error" && <p className="text-sm text-destructive">Something went wrong. Please try again.</p>}
             </form>
           </ScrollReveal>
         </div>
