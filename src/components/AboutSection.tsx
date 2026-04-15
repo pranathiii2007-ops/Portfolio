@@ -17,7 +17,7 @@ export function AboutSection() {
           {/* Animated image */}
           <ScrollReveal className="flex-shrink-0" delay={200}>
             <div className="relative">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-sage/30 to-lavender/30 blur-xl scale-105" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-warm/25 to-sage/25 blur-xl scale-105" />
               <img
                 src={aboutImg}
                 alt="Pranathi working"
@@ -26,7 +26,7 @@ export function AboutSection() {
                 height={400}
                 className="relative z-10 w-64 md:w-72 lg:w-80 rounded-3xl animate-float-slow"
               />
-              <div className="absolute -top-3 right-0 animate-sparkle text-xl">🌸</div>
+              <div className="absolute -top-3 right-0 animate-sparkle text-xl">🌻</div>
               <div className="absolute -bottom-3 left-4 animate-bounce-gentle text-lg">🎨</div>
             </div>
           </ScrollReveal>
