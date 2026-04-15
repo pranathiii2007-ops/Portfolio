@@ -5,19 +5,19 @@ interface Particle {
   x: number;
   y: number;
   size: number;
-  type: "leaf" | "star" | "sparkle" | "dot";
+  type: "heart" | "star" | "sparkle" | "dot";
   delay: number;
   duration: number;
 }
 
 export function FloatingDecorations() {
   const [particles] = useState<Particle[]>(() =>
-    Array.from({ length: 16 }, (_, i) => ({
+    Array.from({ length: 18 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: 10 + Math.random() * 14,
-      type: (["leaf", "star", "sparkle", "dot"] as const)[i % 4],
+      size: 10 + Math.random() * 16,
+      type: (["heart", "star", "sparkle", "dot"] as const)[i % 4],
       delay: Math.random() * 5,
       duration: 4 + Math.random() * 4,
     }))
@@ -37,10 +37,10 @@ export function FloatingDecorations() {
             animationDuration: `${p.duration}s`,
           }}
         >
-          {p.type === "leaf" && <span className="text-sage">🍂</span>}
+          {p.type === "heart" && <span className="text-blush">♥</span>}
           {p.type === "star" && <span className="text-warm">✦</span>}
           {p.type === "sparkle" && <span className="text-peach">✧</span>}
-          {p.type === "dot" && <span className="text-blush">●</span>}
+          {p.type === "dot" && <span className="text-lavender">●</span>}
         </div>
       ))}
     </div>

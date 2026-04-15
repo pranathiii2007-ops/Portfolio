@@ -1,12 +1,12 @@
 import { ScrollReveal } from "./ScrollReveal";
 
 const skills = [
-  { name: "HTML5", level: 90, color: "bg-warm" },
+  { name: "HTML5", level: 90, color: "bg-peach" },
   { name: "CSS3", level: 85, color: "bg-sage" },
-  { name: "JavaScript", level: 72, color: "bg-peach" },
-  { name: "Python", level: 70, color: "bg-blush" },
-  { name: "Java", level: 65, color: "bg-primary" },
-  { name: "React", level: 60, color: "bg-lavender" },
+  { name: "JavaScript", level: 72, color: "bg-warm" },
+  { name: "Python", level: 70, color: "bg-lavender" },
+  { name: "Java", level: 65, color: "bg-blush" },
+  { name: "React", level: 60, color: "bg-primary" },
 ];
 
 export function SkillsSection() {

@@ -7,31 +7,35 @@ const services = [
     title: "Web Development",
     description: "Building responsive, modern web applications with clean code and latest technologies like React, TypeScript, and Python.",
     color: "bg-sage/30",
+    accent: "text-sage",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
     description: "Crafting beautiful, intuitive user experiences with attention to detail, accessibility, and modern design principles.",
-    color: "bg-warm/25",
+    color: "bg-peach/30",
+    accent: "text-peach",
   },
   {
     icon: Smartphone,
     title: "Mobile-First Design",
     description: "Designing responsive interfaces that look and feel amazing across all devices and screen sizes.",
-    color: "bg-peach/25",
+    color: "bg-blush/30",
+    accent: "text-blush",
   },
   {
     icon: Sparkles,
     title: "Creative Solutions",
     description: "Combining AI, creativity, and technology to solve real-world problems with innovative approaches.",
-    color: "bg-blush/25",
+    color: "bg-lavender/30",
+    accent: "text-lavender",
   },
 ];
 
 export function ServicesSection() {
   return (
     <section id="services" className="relative py-24 px-4">
-      <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-warm/10 blur-3xl" />
+      <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-peach/15 blur-3xl" />
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <p className="text-center text-sm font-medium text-primary tracking-widest uppercase">What I Do</p>
