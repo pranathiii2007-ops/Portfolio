@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="relative min-h-screen">
+    <div className="grain-overlay relative min-h-screen">
       <BackgroundDecorations />
       <FloatingDecorations />
       <Navbar />
