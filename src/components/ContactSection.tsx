@@ -44,7 +44,7 @@ export function ContactSection() {
               <div className="rounded-xl bg-peach/30 p-3"><Mail className="h-5 w-5 text-foreground" /></div>
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
-                <a href="mailto:pranathi@example.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">pranathi@example.com</a>
+                <a href="mailto:pranathiii2007@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">pranathiii2007@gmail.com</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
